@@ -1,0 +1,25 @@
+{
+    "editor.tabSize": 2,
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Monaco",
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "go.buildTags": "",
+    "go.buildFlags": [],
+    "go.lintFlags": [
+        "--disable-all",
+        "--enable=errcheck"
+    ],
+    "go.vetFlags": [],
+    "go.testFlags": [
+        "-v",
+        "-count=1"
+    ],
+    "go.testTimeout": "2m",
+    "go.coverOnSave": false,
+    "go.useCodeSnippetsOnFunctionSuggest": false,
+    "go.formatTool": "goreturns",
+    "go.goroot": "/usr/local/go",
+    "go.inferGopath": false,
+    "go.gocodeAutoBuild": true,
+}
