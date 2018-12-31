@@ -25,7 +25,7 @@
 			{
 				"command": "extension.tl-rename",
 				"key": "ctrl+shift+a",
-				"mac": "ctrl+shift+a"
+				"mac": "cmd+shift+a"
 			}
 		]
 	},

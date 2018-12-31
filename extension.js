@@ -61,6 +61,25 @@ function activate(context) {
 				editBuilder.replace(new vscode.Range(selection.start, selection.end), newName)
 			})
 		} else {
+			let first = text.substring(0, 1)
+			let tail = text.substring(1)
+			if (isCapital(first)) {
+				let newName = "M_" + first.toLowerCase()
+
+				for (var i = 0; i < tail.length; i++) {
+					var c = tail.charAt(i);
+					if (c < 'A' || c > 'Z') {
+						newName = newName + c
+					} else {
+						let ls = c.toLowerCase()
+						newName = newName + "_" + ls
+					}
+				}
+
+				editor.edit(editBuilder => {
+					editBuilder.replace(new vscode.Range(selection.start, selection.end), newName)
+				})
+			}
 		}
 	});
 
